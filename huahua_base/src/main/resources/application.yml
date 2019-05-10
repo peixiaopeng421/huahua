@@ -1,0 +1,30 @@
+#配置端口号
+server:
+  port: 9001
+
+#设置项目名称
+spring:
+  application:
+    name: huahua-base
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.149.129:3306/huahua_base?characterEncoding=utf-8
+    username: root
+    password: itcast
+
+##    #mybiatis映射路径
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
+
+  #日志级别
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+
+
+
+logging:
+  level:
+    root: info

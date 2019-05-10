@@ -1,0 +1,8 @@
+server:
+  port: 8002
+
+spring:
+  rabbitmq:
+    host: 192.168.149.129
+    username: guest
+    password: guest

@@ -1,0 +1,13 @@
+server: 
+  port: 9010
+spring: 
+  application:  
+    name: huahua-friend #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.149.129:3306/huahua_friend?useUnicode=true&amp;characterEncoding=UTF8
+    username: root
+    password: itcast
+  jpa: 
+    database: MySQL
+    show-sql: true

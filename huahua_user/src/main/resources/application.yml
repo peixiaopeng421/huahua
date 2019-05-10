@@ -1,0 +1,30 @@
+server: 
+  port: 9008
+spring: 
+  application:  
+    name: huahua-user #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.149.129:3306/huahua_user?useUnicode=true&characterEncoding=UTF8
+    username: root
+    password: itcast
+  jpa: 
+    database: MySQL
+    show-sql: true
+
+  redis:
+    host: 192.168.149.129
+    port: 6379
+
+  rabbitmq:
+      host: 192.168.149.129
+      username: guest
+      password: guest
+jwt:
+  config:
+     key: huahuaCommunity
+     ttl: 3600000     #过期时间一小时
+
+
+
+

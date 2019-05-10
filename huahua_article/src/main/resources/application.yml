@@ -1,0 +1,27 @@
+server: 
+  port: 9004
+spring: 
+  application:  
+    name: huahua-article #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.149.129:3306/huahua_article?useUnicode=true&characterEncoding=UTF8
+    username: root
+    password: itcast
+  jpa: 
+    database: MySQL
+    show-sql: true
+#redis
+  redis:
+    host: 192.168.149.129
+    port: 6379
+ #mongodb配置
+  data:
+    mongodb:
+      host: 39.97.117.83
+      port: 27017
+      database: recruitdb
+jwt:
+  config:
+    key: huahuaCommunity
+    ttl: 3600000     #过期时间一小时
